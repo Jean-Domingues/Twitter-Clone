@@ -1,5 +1,17 @@
 import React from 'react';
-import { Container, Header, ProfileInfo, BackIcon } from './styles';
+
+import ProfilePage from '../ProfilePage';
+import {
+  Container,
+  Header,
+  ProfileInfo,
+  BackIcon,
+  BottomMenu,
+  HomeIcon,
+  SearchIcon,
+  EmailIcon,
+  BellIcon,
+} from './styles';
 
 const Main: React.FC = () => {
   return (
@@ -11,18 +23,18 @@ const Main: React.FC = () => {
 
         <ProfileInfo>
           <strong>Jean Domigues</strong>
-          <span>1200 Tweets</span>
+          <span>1250 Tweets</span>
         </ProfileInfo>
-
-        {/* <ProfilePage /> */}
-
-        {/* <BottomMenu>
-          <HomeIcon />
-          <SearchIcon />
-          <BellIcon />
-          <EmailIcon />
-        </BottomMenu> */}
       </Header>
+
+      <ProfilePage />
+
+      <BottomMenu>
+        <HomeIcon className="active" />
+        <SearchIcon />
+        <BellIcon />
+        <EmailIcon />
+      </BottomMenu>
     </Container>
   );
 };
