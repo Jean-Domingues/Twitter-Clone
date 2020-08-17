@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { LocationOn, Cake } from '../../style/Icons';
+import Button from '../Button';
 
 export const Container = styled.div`
   display: flex;
@@ -108,4 +109,20 @@ export const LocationIcon = styled(LocationOn)`
 
 export const CakeIcon = styled(Cake)`
   ${iconCss}
+`;
+
+export const EditButton = styled(Button)`
+  position: absolute;
+  top: 2vw;
+  right: 7px;
+
+  padding: 4px 16px;
+  font-size: 13px;
+
+  @media (min-width: 425px) {
+    top: 10px;
+    padding: 10px 19px;
+    font-size: 15px;
+  }
+
 `;
