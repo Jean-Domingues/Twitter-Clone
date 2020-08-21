@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '../Button';
+import Button from '../Button'
 
 import {
   Container,
@@ -13,6 +13,7 @@ import {
   FavoriteIcon,
   ProfileIcon,
 } from './styles';
+
 
 const MenuBar: React.FC = () => {
   return (
@@ -45,11 +46,13 @@ const MenuBar: React.FC = () => {
           <span>Perfil</span>
         </MenuButton>
 
-        <Button>
+        <Button outlined={false}>
           <span>Tweetar</span>
         </Button>
       </Topside>
     </Container>
-  );
-};
+  )
+}
+
 export default MenuBar;
+
